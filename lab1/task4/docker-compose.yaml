@@ -1,0 +1,30 @@
+services:
+
+  lite-server:
+    build: ./task2
+    volumes:
+      - ./task2/bs-config.json:/app/bs-config.json
+    deploy:
+      mode: replicated
+      replicas: 3
+    expose:
+      - 3000
+
+  json-server:
+    build: ./task3
+    volumes:
+      - ./task3/db.json:/app/db.json
+    deploy:
+      mode: replicated
+      replicas: 3
+    expose:
+      - 3000
+
+  nginx:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - json-server

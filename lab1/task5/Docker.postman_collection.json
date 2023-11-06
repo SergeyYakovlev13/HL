@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "fad749cc-2b04-40ee-becd-ff78e4cf582b",
+		"name": "Docker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18811123"
+	},
+	"item": [
+		{
+			"name": "Get_Static",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/json-server/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"json-server",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/json-server/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"json-server",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/json-server/profile",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"json-server",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

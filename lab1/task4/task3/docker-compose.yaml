@@ -1,0 +1,9 @@
+services:
+  json-server:
+    build: .
+    restart: always
+    container_name: json-server
+    ports:
+      - 3001:3000
+    volumes:
+      - ./:/usr/src/app 
