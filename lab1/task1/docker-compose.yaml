@@ -1,3 +1,4 @@
 services:
   hello-world:
     image: hello-world:latest
+    container_name: hello-world-container
